@@ -1,5 +1,10 @@
 # depslib dependency file v1.0
+<<<<<<< HEAD
 1777429885 source:c:\users\fcast\onedrive\documentos\tercer semestre\programaci”n i\proyectop12k26\proyectop12k26\main.cpp
+=======
+<<<<<<< HEAD
+1776869130 source:c:\users\fcast\onedrive\documentos\tercer semestre\programaci”n i\proyectop12k26\proyectop12k26\main.cpp
+>>>>>>> 7aedc537b6a9e26bca804ea167a026ba36d93c43
 	<iostream>
 
 1776869130 source:c:\users\fcast\onedrive\documentos\tercer semestre\programaci”n i\proyectop12k26\proyectop12k26\src\proyecto.cpp
@@ -25,4 +30,28 @@
 
 1777429507 c:\users\fcast\onedrive\documentos\tercer semestre\programaci”n i\proyectop12k26\proyectop12k26\include\alumnos.h
 	<string>
+
+1776870878 source:c:\users\david\documents\programacion-1\proyectop12k26\proyectop12k26\src\proyecto.cpp
+	"proyecto.h"
+
+1776870878 c:\users\david\documents\programacion-1\proyectop12k26\proyectop12k26\include\proyecto.h
+
+1777304279 source:c:\users\david\documents\programacion-1\proyectop12k26\proyectop12k26\main.cpp
+	<iostream>
+
+1777304595 source:c:\users\david\documents\programacion-1\proyectop12k26\proyectop12k26\src\cursos.cpp
+	"Cursos.h"
+	<string>
+
+1777304595 c:\users\david\documents\programacion-1\proyectop12k26\proyectop12k26\include\cursos.h
+	<string>
+=======
+1776869199 source:c:\users\intecapabner\documents\lab progra1\programacion 1\programacion_1_umg\proyecto final\proyectop12k26\proyectop12k26\main.cpp
+	<iostream>
+
+1776869199 source:c:\users\intecapabner\documents\lab progra1\programacion 1\programacion_1_umg\proyecto final\proyectop12k26\proyectop12k26\src\proyecto.cpp
+	"proyecto.h"
+
+1776869199 c:\users\intecapabner\documents\lab progra1\programacion 1\programacion_1_umg\proyecto final\proyectop12k26\proyectop12k26\include\proyecto.h
+>>>>>>> 25a05118df0520f93fe5c3798fd2548c7ff9709c
 
