@@ -8,9 +8,10 @@ class Bancos
     public:
         Bancos();
         virtual ~Bancos();
-        bool procesoTransferencia(std::string nombreCliente, int numeroCuenta, double monto);
-        bool procesoPagoPlanilla(std::string nombreCliente, int numeroCuenta, double monto);
-
+        bool InfoTransferencia(std::string nombreBanco, std::string nombreCliente, int numeroTarjeta);
+        bool InfoPagoPlanilla(std::string nombreBanco, std::string nombreCliente, int numeroCuenta);
+        bool procesoTransferencia(int numeroTarjeta, double monto, double saldoCuenta);
+        bool procesoPagoPlanilla(int numeroCuenta, double montoPago, double saldoCuenta);
     protected:
 
     private:
