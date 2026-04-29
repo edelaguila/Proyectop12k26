@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1777322105 source:c:\users\moise\documents\proyectop12k26\bancos\src\bancos.cpp
+	"Bancos.h"
+
+1777323502 c:\users\moise\documents\proyectop12k26\bancos\include\bancos.h
+	<string>
+
