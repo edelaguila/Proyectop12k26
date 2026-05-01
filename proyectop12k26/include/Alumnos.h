@@ -1,15 +1,18 @@
+//Creado por Fernando Castillo - 9959-25-288
+//El 30/04/2026
 #ifndef ALUMNOS_H
 #define ALUMNOS_H
 #include <string>
-
+#include <vector>
 
 class Alumnos
 {
     public:
         //Contructor
         Alumnos();
-        Alumnos(std::string nombreAlumno, std::string apellidoAlumno, std::string sexoAlumno, std::string numeroDpi, std::string correoPersonal, std::string carnetPersonal);
+        Alumnos(std::string nombreCompletoAlumno, std::string sexoAlumno, std::string numeroDpi, std::string correoPersonal, std::string carnetPersonal, std::string carreraAsignada);
         //Getters
+        std::string getnombreCompletoAlumno();
         std::string getnombreAlumno();
         std::string getapellidoAlumno();
         std::string getsexoAlumno();
@@ -20,7 +23,9 @@ class Alumnos
         std::string getcorreoPersonal();
         std::string getfechaNacimientoAlumno();
         std::string getcarnetPersonal();
+        std::string getcarreraAsignada();
         //Setters
+        void setnombreCompletoAlumno(std::string nombreCompletoAlumno);
         void setnombreAlumno(std::string nombreAlumno);
         void setapellidoAlumno(std::string apellidoAlumno);
         void setsexoAlumno(std::string sexoAlumno);
@@ -31,18 +36,23 @@ class Alumnos
         void setcorreoPersonal(std::string correoPersonal);
         void setfechaNacimientoAlumno(std::string fechaNacimientoAlumno);
         void setcarnetPersonal(std::string carnetPersonal);
+        void setcarreraAsignada(std::string carreraAsignada);
         //Metodos
         void registroDatos();
         void menuRegistro();
         void obtenerFechaNacimiento();
         int obtenerAnioCorto();
         void creaCorreoPersonal();
-        void crearCarnetPersonal();
+        void crearCarnetPersonal(std::string codigoCarrera);
+        void obtenerNombreCompleto();
+        void registroExitoso();
+        std::vector<Alumnos> alumnosPrueba();
 
     protected:
 
     private:
-         //Datos personales del alumno
+        //Datos personales del alumno
+        std::string nombreCompletoAlumno;
         std::string nombreAlumno;
         std::string apellidoAlumno;
         std::string sexoAlumno;
@@ -53,9 +63,9 @@ class Alumnos
         std::string correoPersonal;
         std::string fechaNacimientoAlumno;
         std::string carnetPersonal;
+        std::string carreraAsignada;
         int anioCorto;
         //Constantes
-        static const int CODIGO_ING_SISTEMA = 9959;
         static const int ANIO_ACTUAL = 26;
         //numeroAleatorio
         int numeroAleatorio(int minimo, int maximo);
