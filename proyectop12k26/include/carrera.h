@@ -8,7 +8,7 @@ class carrera
     public:
         //Constructor
         carrera();
-        carrera(std::string codigoCarrera, std::string nombreCarrera, bool estadoCarrea);
+        carrera(std::string codigocarrera, std::string nombreCarrera, bool estadocarrea);
         //Get
         std::string getcodigocarrera();
         std::string getnombrecarrera();
