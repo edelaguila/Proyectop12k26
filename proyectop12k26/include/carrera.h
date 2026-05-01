@@ -1,5 +1,5 @@
-#ifndef CARRERA_H
-#define CARRERA_H     //Creado por David Alegria
+#ifndef CARRERA_H                 //Creado por David Alegria
+#define CARRERA_H
 #include <string>
 #include <vector>
 
