@@ -57,8 +57,12 @@
 
 1776870878 c:\users\david\documents\programacion-1\proyectop12k26\proyectop12k26\include\proyecto.h
 
+<<<<<<< HEAD
 1777602286 source:c:\users\david\documents\programacion-1\proyectop12k26\proyectop12k26\src\carrera.cpp
 	"Carrera.h"
+=======
+1777501103 source:c:\users\david\documents\programacion-1\proyectop12k26\proyectop12k26\main.cpp
+>>>>>>> segundo_mantenimiento_clase_cursos_9959_25_288
 	<iostream>
 	<vector>
 
@@ -115,5 +119,24 @@
 
 1777478125 c:\users\fcast\onedrive\documentos\tercer semestre\programaciÓn i\proyectop12k26\proyectop12k26\include\facultades.h
 >>>>>>> 32980b9c20dbb484aa1bdab42a605074453e6edc
+	<string>
+
+1777501103 source:c:\users\david\documents\programacion-1\proyectop12k26\proyectop12k26\src\alumnos.cpp
+	"Alumnos.h"
+	<iostream>
+	<string>
+	<cstdlib>
+	<ctime>
+	<thread>
+	<chrono>
+
+1777501103 c:\users\david\documents\programacion-1\proyectop12k26\proyectop12k26\include\alumnos.h
+	<string>
+
+1777501103 source:c:\users\david\documents\programacion-1\proyectop12k26\proyectop12k26\src\facultades.cpp
+	"facultades.h"
+	<iostream>
+
+1777501103 c:\users\david\documents\programacion-1\proyectop12k26\proyectop12k26\include\facultades.h
 	<string>
 
