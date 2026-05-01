@@ -34,7 +34,15 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+<<<<<<< HEAD
 		<Unit filename="include/Alumnos.h" />
+=======
+<<<<<<< HEAD
+		<Unit filename="include/Alumnos.h" />
+=======
+<<<<<<< HEAD
+>>>>>>> 7aedc537b6a9e26bca804ea167a026ba36d93c43
+>>>>>>> 32980b9c20dbb484aa1bdab42a605074453e6edc
 		<Unit filename="include/Cursos.h" />
 		<Unit filename="include/carrera.h" />
 		<Unit filename="include/facultades.h" />
