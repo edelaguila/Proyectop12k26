@@ -1,32 +1,32 @@
-#ifndef CARRERA_H
-#define CARRERA_H     //Creado por David Alegria
+#ifndef carrera_H
+#define carrera_H     //Creado por David Alegria
 #include <string>
 #include <vector>
 
-class Carrera
+class carrera
 {
     public:
         //Constructor
-        Carrera();
-        Carrera(std::string codigoCarrera, std::string nombreCarrera, bool estadoCarrea);
+        carrera();
+        carrera(std::string codigoCarrera, std::string nombreCarrera, bool estadoCarrea);
         //Get
-        std::string getcodigoCarrera();
-        std::string getnombreCarrera();
-        bool getestadoCarrera();
+        std::string getcodigocarrera();
+        std::string getnombrecarrera();
+        bool getestadocarrera();
         //Set
-        void setcodigoCarrera(std::string codigoCarera);
-        void setnombreCarrera(std::string nombreCarerra);
-        void setestadoCcarrera(bool estadoCarrera);
+        void setcodigocarrera(std::string codigocarera);
+        void setnombrecarrera(std::string nombrecarerra);
+        void setestadocarrera(bool estadocarrera);
         //Metodos
-        std::vector<Carrera> datosCarreras();
+        std::vector<carrera> datoscarreras();
 
 
     protected:
 
     private:
-        std::string codigoCarrera;
-        std::string nombreCarrera;
-        bool estadoCarrera;
+        std::string codigocarrera;
+        std::string nombrecarrera;
+        bool estadocarrera;
 };
 
 #endif // CARRERA_H

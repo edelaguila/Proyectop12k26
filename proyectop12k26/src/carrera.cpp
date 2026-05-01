@@ -1,52 +1,52 @@
-#include "Carrera.h"
+#include "carrera.h"
 #include <iostream>     //Creado por David Alegria
 #include <vector>
 using namespace std;
 
- Carrera::Carrera()
+ carrera::carrera()
 {
     //ctor
 }
 
-Carrera::Carrera(string codigoCarrera, string nombreCarrera, bool estadoCarrera)
+carrera::carrera(string codigocarrera, string nombrecarrera, bool estadocarrera)
 {
-    this -> codigoCarrera = codigoCarrera;
-    this -> nombreCarrera = nombreCarrera;
-    this -> estadoCarrera = estadoCarrera;
+    this -> codigocarrera = codigocarrera;
+    this -> nombrecarrera = nombrecarrera;
+    this -> estadocarrera = estadocarrera;
 
 }
 
 
-vector<Carrera> Carrera::datosCarreras()
+vector<carrera> carrera::datoscarreras()
 {
-    vector<Carrera> infoCarreras;
-    infoCarreras.push_back(Carrera("9959", "Ingeniera en Sistemas", true));
-    infoCarreras.push_back(Carrera("9975", "Ingeniera Industrial", true));
-    infoCarreras.push_back(Carrera("9973", "Ingeniera Civil", true));
-    return infoCarreras;
+    vector<carrera> infocarreras;
+    infocarreras.push_back(carrera("9959", "Ingeniera en Sistemas", true));
+    infocarreras.push_back(carrera("9975", "Ingeniera Industrial", true));
+    infocarreras.push_back(carrera("9973", "Ingeniera Civil", true));
+    return infocarreras;
 }
 
-string Carrera::getnombreCarrera()
+string carrera::getnombrecarrera()
 {
-    return this -> nombreCarrera;
+    return this -> nombrecarrera;
 }
-string Carrera::getcodigoCarrera()
+string carrera::getcodigocarrera()
 {
-    return this -> codigoCarrera;
+    return this -> codigocarrera;
 }
-bool Carrera::getestadoCarrera()
+bool carrera::getestadocarrera()
 {
-    return this -> estadoCarrera;
+    return this -> estadocarrera;
 }
-void Carrera::setnombreCarrera(string nombreCarrera)
+void carrera::setnombrecarrera(string nombrecarrera)
 {
-    this -> nombreCarrera = nombreCarrera;
+    this -> nombrecarrera = nombrecarrera;
 }
-void Carrera::setcodigoCarrera(string codigoCarrera)
+void carrera::setcodigocarrera(string codigocarrera)
 {
-    this -> codigoCarrera = codigoCarrera;
+    this -> codigocarrera = codigocarrera;
 }
-void Carrera::setestadoCcarrera(bool estadoCarrera)
+void carrera::setestadocarrera(bool estadocarrera)
 {
-    this -> estadoCarrera = estadoCarrera;
+    this -> estadocarrera = estadocarrera;
 }
