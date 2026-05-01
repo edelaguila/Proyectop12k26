@@ -36,6 +36,7 @@
 		</Compiler>
 		<Unit filename="include/Alumnos.h" />
 		<Unit filename="include/Cursos.h" />
+		<Unit filename="include/carrera.h" />
 		<Unit filename="include/facultades.h" />
 		<Unit filename="include/inscipcion.h" />
 		<Unit filename="include/maestros.h" />

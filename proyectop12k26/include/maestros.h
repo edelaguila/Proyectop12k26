@@ -2,7 +2,6 @@
 #define MAESTROS_H
 
 #include <string>
-#include "curso.h"
 using namespace std;
 
 class Maestros {
@@ -15,7 +14,7 @@ private:
     string sede;
     int diasSemana;
     int horasClase;
-    Curso curso;
+
 
 public:
     Maestros();
