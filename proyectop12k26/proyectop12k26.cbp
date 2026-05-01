@@ -39,7 +39,6 @@
 		<Unit filename="include/carrera.h" />
 		<Unit filename="include/facultades.h" />
 		<Unit filename="include/inscipcion.h" />
-		<Unit filename="include/maestros.h" />
 		<Unit filename="include/proyecto.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Alumnos.cpp" />
@@ -47,7 +46,6 @@
 		<Unit filename="src/carrera.cpp" />
 		<Unit filename="src/facultades.cpp" />
 		<Unit filename="src/inscipcion.cpp" />
-		<Unit filename="src/maestros.cpp" />
 		<Unit filename="src/proyecto.cpp" />
 		<Extensions />
 	</Project>
