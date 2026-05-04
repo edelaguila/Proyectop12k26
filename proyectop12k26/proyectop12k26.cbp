@@ -34,12 +34,44 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+<<<<<<< HEAD
 		<Unit filename="include/Cursos.h" />
 		<Unit filename="include/maestros.h" />
 		<Unit filename="include/proyecto.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Cursos.cpp" />
 		<Unit filename="src/maestros.cpp" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+		<Unit filename="include/Alumnos.h" />
+=======
+=======
+>>>>>>> 9236b129b9ffec0bad1aa59ad52d3ddfba4b581c
+<<<<<<< HEAD
+		<Unit filename="include/Alumnos.h" />
+=======
+<<<<<<< HEAD
+>>>>>>> 7aedc537b6a9e26bca804ea167a026ba36d93c43
+<<<<<<< HEAD
+>>>>>>> 32980b9c20dbb484aa1bdab42a605074453e6edc
+=======
+=======
+		<Unit filename="include/Alumnos.h" />
+>>>>>>> 3148f475dd3958f9bd0ebca4ab579327aea07f58
+>>>>>>> 9236b129b9ffec0bad1aa59ad52d3ddfba4b581c
+		<Unit filename="include/Cursos.h" />
+		<Unit filename="include/carrera.h" />
+		<Unit filename="include/facultades.h" />
+		<Unit filename="include/inscipcion.h" />
+		<Unit filename="include/proyecto.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Alumnos.cpp" />
+		<Unit filename="src/Cursos.cpp" />
+		<Unit filename="src/carrera.cpp" />
+		<Unit filename="src/facultades.cpp" />
+		<Unit filename="src/inscipcion.cpp" />
+>>>>>>> 31ae166e5dc124f296f0215c68ec3b843393d089
 		<Unit filename="src/proyecto.cpp" />
 		<Extensions />
 	</Project>
