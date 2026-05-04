@@ -9,11 +9,10 @@ maestros::maestros()
     nombre = "";
     apellido = "";
     correo = "";
-    horario = "";
-    codigo = "";
+    codigo = 0;
     sede = "";
-    diaSemana = "";
-    horasClase = "";
+    diasSemana = 3;
+    horasClase = 2;
 
 }
 
@@ -50,10 +49,10 @@ void maestros:asignarHorario(){
     int opcionSede;
     cin >> opcionSede;
 
-    dia = 3;
+    diaSemana = 3;
     cout << "Dias a la semana asignados por el sistema: "<< diaSemana << "días" << endl;
 
-    horaClase = 2;
+    horasClase = 2;
     cout << "Horas por clase asignadas: " << horasClase << "horas" << endl;
 
     switch (opcionSede){
@@ -67,8 +66,42 @@ void maestros:asignarHorario(){
 
 }
 
+void maestros::mostrarCarreras(){
+    cout << "Carreras disponibles" << endl;
+    vector<carrera> carreras = carrera().datoscarreras;
+
+    for(int i = 0; i < carreras.size(); i++){
+        if(carreras[i].getestadocarrera()){
+            cout << i+1<< "." << carreras[i].getnombrecarrera()
+            << "Codigo: " << carreras[i].getcodigocarrera() << endl;
+        }
+    }
+}
+
+void maaestros::mostrarCursosPorCarrera(string codigoCarrera){
+    cout << "Cursos disponibles para esta carrera" << endl;
+
+    if(codigoCarrera == "9959"){
+
+        vector<Cursos> cursos = curso.catalagoCursosIngSistemas();
+        int contador = 1;
+
+        for(int i = 0; curso.size(); i++){
+            if(curso[i].getestadoCurso){
+                cout << contador << ". " << cursos[i].getnombreCurso() << "Codigo: " << cursos[i].getcodigoCurso() << " " << endl;
+                cout << "Pre-requisito: " cursos[i].getpreRequisitoDeCurso() << end;
+                contador++;
+            }
+        }
+    }
+    else{
+        cout << "No hay cursos registrados para esta carrera" << endl;
+    }
+}
+
+
 void Maestros::asignarCurso(){
-    cout << "Asignacion Curso" << endl;
+    cout << "Asignación Curso" << endl;
 
     int codigoIngresado;
     cout << "Ingrese su codigo: ";
@@ -79,17 +112,63 @@ void Maestros::asignarCurso(){
         return;
     }
 
-    curso.mostrarCursos();
-    curso.seleccionarCursos();
-    curso.mostrarInformacion();
+    mostrarCarreras();
 
-    asignarHorario();
+    int opcionCarrera;
+    cout << "Seleccione la carrera: ";
+    cin >> opcionCarrera;
 
-    cout << "\n Curso asignado: " << curso.getNombre() << endl;
-    cout << "Salario base del curso Q: " << cursoSalarioBase() << endl;
 
+    vector<carrera> carreras = carrera().datoscarreras();
+    if(opcionCarrera >= 1 && opcionCarrera <= carreras.size()){
+        carreraSeleccionada = carreras[opcionCarrera - 1];
+        cout << "Carrera seleccinada: " << carreraSeleccionada.getnombrecarrera() <<endl;
+
+        mostrarCursosPorCarrera(carreraSeleccionada.getcodigocarrera());
+
+        vector <Cursos> cursos = curso.catalagoCursosIngSistemas();
+        int opcionCurso;
+        cout << "\nSeleccione el curso que desea:"
+        cin >> opcionCurso;
+
+        if(opcionCurso >= 1 && opcionCurso <= cursos.size()){
+            curso = cursos[opcionCurso - 1];
+            cout << "Asignacion completada" << endl;
+            cout << "Curso seleccionado: " << curso.getnombreCurso() << endl;
+
+            asignarHorario();
+
+            cout << "Salario: Q" << calcularSalario() << endl;
+
+        }
+        else{
+            cout << "Opcion no valida" << endl;
+        }
+
+    }
+    else{
+        cout << "Opcion no valida" << endl,
+    }
 }
-double maestros::verificarCodigo(int codigoIngresado){
+
+double maestros::calcularSalario(){
+    double salarioBase = 0;
+    double bonoSede = 0;
+
+    if(sede == "Central")
+        bonoSede = 500;
+    else if (sede == "Sede Antigua")
+        bonoSede = 300;
+    else if (sede == "Sede Zona Portales")
+        bonoSede = 400;
+    else if(sede == "Sede San Jose Pinula")
+        bonoSede = 200;
+
+    return salarioBase + bonoSede;
+}
+
+
+bool maestros::verificarCodigo(int codigoIngresado){
     return codigoIngresado == codigo;
 
 }
@@ -100,7 +179,6 @@ void maestros::mostrarResultados(){
     cout << "Codigo: " << codigo << endl;
     cout << "Curso asignado: " << curso.getNombre() << endl;
     cout << "Sede: " << sede << endl;
-    cout << "Horario: " << horario << endl;
     cout << "Dias por semana: " << diasSemana << endl;
     cout << "Horas por clase: " << horasClase << endl;
     cout << "Salario final Q: " << calcularSalario<< endl;
@@ -113,6 +191,12 @@ int maestros::getCodigo(){
 
 string maestros::getNombreCurso(){
     return curso.getNombre();
+}
+string maestros::getNombre(){
+    return nombre;
+}
+string maestros:: getApellido(){
+    return apellido;
 }
 
 

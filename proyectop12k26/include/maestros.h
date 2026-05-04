@@ -3,7 +3,8 @@
 
 #include <string>
 <<<<<<< HEAD
-#include "curso.h"
+#include "cursos.h"
+#include "carrera.h"
 =======
 >>>>>>> 31ae166e5dc124f296f0215c68ec3b843393d089
 using namespace std;
@@ -14,12 +15,12 @@ private:
     string apellido;
     string correo;
     int codigo;
-    string horario;
     string sede;
     int diasSemana;
     int horasClase;
 <<<<<<< HEAD
     Curso curso;
+    carrera carreraSeleccionada;
 =======
 
 >>>>>>> 31ae166e5dc124f296f0215c68ec3b843393d089
@@ -35,9 +36,13 @@ public:
     double calcularSalario();
     bool verificarCodigo(int codigoIngresado);
     void mostrarResultados();
+    void mostrarCarreras();
+    void mostrarCursosPorCarrera(string codigoCarrera);
 
     int getCodigo();
     string getNombreCurso();
+    string getNombre();
+    string getApellido();
 };
 
 #endif
