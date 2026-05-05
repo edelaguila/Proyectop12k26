@@ -203,5 +203,3 @@ string Maestros::getNombre(){
 string Maestros:: getApellido(){
     return apellido;
 }
-
-
