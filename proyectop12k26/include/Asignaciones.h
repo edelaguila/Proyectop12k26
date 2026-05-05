@@ -3,13 +3,13 @@
 #include <vector>
 #include <string>
 #include "Alumnos.h"
-#include "Curso.h"
+#include "Cursos.h"
 
 class Asignacion {
 public:
     std::vector<std::string> cursosAsignados;
     bool validarCarnet(std::string carnet, std::vector<Alumnos> listaAlumnos);
-    void asignarCurso(std::string carnet, std::string codCurso, std::vector<Curso> catalogo, std::vector<std::string> cursosAprobados);
+    void asignarCurso(std::string carnet, std::string codCurso, std::vector<Cursos> catalogo, std::vector<std::string> cursosAprobados);
     std::vector<std::string> getCursosAsignados();
 };
 #endif
