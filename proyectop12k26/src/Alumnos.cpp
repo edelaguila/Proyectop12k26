@@ -3,12 +3,16 @@
 #include "Alumnos.h"
 #include "carrera.h"
 #include <iostream>
+#include <fstream>
 #include <string>
+#include <stdlib.h>
 #include <cstdlib>
 #include <ctime>
 #include <thread>
 #include <chrono>
 #include <vector>
+#include <iomanip>
+#include <conio.h>
 using namespace std;
 
 //Constructor
@@ -301,6 +305,236 @@ void Alumnos::registroExitoso()
     cout << "Correo: " << this -> getcorreoPersonal() << endl;//correo personal
     cout << "Carrera: " << this -> getcarreraAsignada() << endl;//carrera que se asigno el alumno
 
+}
+
+//Menu principal CRUD
+void Alumnos::menuInsertar()
+{
+    int escogerOpcion = 0;
+    char validacionAgregar;
+    do{
+        system("cls");
+        cout << "\t\t\t\t\t---------------------------------" << endl;
+        cout << "\t\t\t\t\t |   SISTEMA GESTION ALUMNO    | " << endl;
+        cout << "\t\t\t\t\t---------------------------------" << endl;
+        cout << "\t\t\t\t\t 1. Ingresar Alumno" << endl;
+        cout << "\t\t\t\t\t 2. Despliegue Alumno" << endl;
+        cout << "\t\t\t\t\t 3. Modificar Alumno" << endl;
+        cout << "\t\t\t\t\t 4. Buscar Alumno" << endl;
+        cout << "\t\t\t\t\t 5. Borrar Alumno" << endl;
+        cout << "\t\t\t\t\t 6. Exit" << endl;
+
+        cout << "\t\t\t\t\t---------------------------------" << endl;
+        cout << "\t\t\t\t\t Opciones a Escoger: [1/2/3/4/5/6]" << endl;
+        cout << "\t\t\t\t\t---------------------------------" << endl;
+        cout << "¿Que opcion desea escoger?: "; cin >> escogerOpcion;
+
+        switch(escogerOpcion)
+        {
+            case 1:
+                do
+                {
+                    insertarAlumno();
+                    cout << "\n\t\t\t\t Agregar otro Alumno (S/N): "; cin >> validacionAgregar;
+                }while (validacionAgregar == 's' || validacionAgregar == 'S');
+                break;
+            case 2:
+                desplegarAlumno();
+                break;
+            case 3:
+                modificarAlumno();
+                break;
+            case 4:
+                buscarAlumno();
+                break;
+            case 5:
+                borrarAlumno();
+                break;
+            case 6:
+                exit(0);
+            default:
+                cout << "\n\t\t\t\t Opcion invalida... Por favor pruebe otra vez" << endl;
+        }
+        getch();
+    }while (escogerOpcion != 6);
+
+}
+
+//Crear
+void Alumnos::insertarAlumno()
+{
+        cin.ignore();
+        system("cls");
+        fstream file;
+        cout << "\n------------------------------------------------------------------------------------------------------------";
+        cout << "\n----------------------------------------Agregar Detalles del Alumno-----------------------------------------" << endl;
+        cout << "\t\t\t Ingrese id unico del alumno: "; cin >> idUnico;
+        cin.ignore();
+        cout << "\t\t\t Ingrese nombre del alumno: "; getline(cin, nombreAlumno);
+        cout << "\t\t\t Ingrese carnet del alumno: "; getline(cin, carnetPersonal);
+        cout << "\t\t\t Ingrese correo del alumno: "; getline(cin, correoPersonal);
+        cout << "\t\t\t Ingrese constraseña del alumno: "; getline(cin, contraseniaUnica);
+        file.open("Alumnos.txt", ios::app | ios::out);
+        file << std::left << std::setw(15) << idUnico << std::left << std::setw(15) << nombreAlumno <<
+        std::left << std::setw(15) << carnetPersonal <<
+        std::left << std::setw(30) << correoPersonal <<
+        std::left << std::setw(15) << contraseniaUnica << "\n";
+        file.close();
+}
+
+//Desplegar
+void Alumnos::desplegarAlumno()
+{
+    cin.ignore();
+    system("cls");
+    fstream file;
+    int total = 0;
+    cout << "\n----------------------------------------Tabla de Detalles de Personas-----------------------------------------" << endl;
+    file.open("Alumnos.txt", ios::in);
+    if (!file)
+    {
+        cout << "\n\t\t\t\t No hay información...";
+        file.close();
+    }
+    else
+    {
+        file >> idUnico >> nombreAlumno >> carnetPersonal >> correoPersonal >> contraseniaUnica;
+        while(!file.eof())
+        {
+            total++;
+            cout << "\n\n\t\t\t Id del alumno: " << idUnico << endl;
+            cout << "\t\t\t Nombre del alumno: " << nombreAlumno << endl;
+            cout << "\t\t\t Carnet del alumno: " << carnetPersonal << endl;
+            cout << "\t\t\t Correo del alumno: " << correoPersonal << endl;
+            cout << "\t\t\t Contraseña del alumno: " << contraseniaUnica << endl;
+            file >> idUnico >> nombreAlumno >> carnetPersonal >> correoPersonal >> contraseniaUnica;
+        }
+        if (total == 0)
+        {
+            cout << "\t\t\t No hay información...";
+        }
+    }
+    file.close();
+}
+
+//Modificar
+void Alumnos::modificarAlumno()
+{
+    cin.ignore();
+    system("cls");
+    fstream file,file1;
+    string participanteId = "";
+    int found = 0;
+    cout << "\n----------------------------------------Modificar Detalles Alumno-----------------------------------------" << endl;
+    file.open("Alumnos.txt", ios::in);
+    if(!file)
+    {
+        cout << "\t\t\t No hay información...";
+        file.close();
+    }
+    else
+    {
+        cout << "\n Ingrese el id del alumno que quiere modificar: "; cin >> participanteId;
+        file1.open("Record.txt", ios::app | ios::out);
+        file >> idUnico >> nombreAlumno >> carreraAsignada >> carnetPersonal >> correoPersonal >> contraseniaUnica;
+        while(!file.eof())
+        {
+            cout << "\t\t\t Ingrese nombre del alumno: "; getline(cin, nombreAlumno);
+            cout << "\t\t\t Ingrese carnet del alumno: "; getline(cin, carnetPersonal);
+            cout << "\t\t\t Ingrese correo del alumno: "; getline(cin, correoPersonal);
+            cout << "\t\t\t Ingrese constraseña del alumno: "; getline(cin, contraseniaUnica);
+            file1 << std::left << std::setw(15) << idUnico << std::left << std::setw(15) << nombreAlumno <<
+            std::left << std::setw(15) << carnetPersonal <<
+            std::left << std::setw(30) << correoPersonal <<
+            std::left << std::setw(15) << contraseniaUnica << "\n";
+            found++;
+        }
+        file >> idUnico >> nombreAlumno >> carnetPersonal >> correoPersonal >> contraseniaUnica;
+    }
+    file1.close();
+    file.close();
+    remove("Alumnos.txt");
+    rename("Record.txt", "Alumnos.txt");
+}
+
+//Buscar
+void Alumnos::buscarAlumno()
+{
+    cin.ignore();
+    system("cls");
+    fstream file;
+    int found = 0;
+    file.open("Alumnos.txt", ios::in);
+    if(!file)
+    {
+        cout << "\n----------------------------------------Datos del Alumno Buscado-----------------------------------------" << endl;
+        cout << "\t\t\t No hay información...";
+    }
+    else
+    {
+        string participanteId = "";
+        cout << "\n----------------------------------------Datos del Alumno Buscado-----------------------------------------" << endl;
+        cout << "\n Ingrese el id del alumno que quiere buscar: "; cin >> participanteId;
+        file >> idUnico >> nombreAlumno >> carnetPersonal >> correoPersonal >> contraseniaUnica;
+        while(!file.eof())
+        {
+            if (participanteId == idUnico)
+            {
+                cout << "\n\n\t\t\t Id del alumno: " << idUnico << endl;
+                cout << "\t\t\t Nombre del alumno: " << nombreAlumno << endl;
+                cout << "\t\t\t Carnet del alumno: " << carnetPersonal << endl;
+                cout << "\t\t\t Correo del alumno: " << correoPersonal << endl;
+                cout << "\t\t\t Contraseña del alumno: " << contraseniaUnica << endl;
+                found++;
+            }
+            file >> idUnico >> nombreAlumno >> carnetPersonal >> correoPersonal >> contraseniaUnica;
+        }
+        if (found == 0)
+        {
+            cout << "\t\t\t Alumno encontrado...";
+        }
+        file.close();
+
+    }
+}
+
+//Borrar
+void Alumnos::borrarAlumno()
+{
+    cin.ignore();
+    system("cls");
+    fstream file,file1;
+    string participanteId = "";
+    int found = 0;
+    cout << "\n----------------------------------------Detalles del Alumno a Borrar-----------------------------------------" << endl;
+    file.open("Alumnos.txt", ios::in);
+    if(!file){
+        cout << "\n\t\t\t\t No hay información..." << endl;
+        file.close();
+    }else{
+        cout << "\n Ingrese el id del alumno que quiere borrar: "; cin >> participanteId;
+        file1.open("Record.txt", ios::app | ios::out);
+        file >> idUnico >> nombreAlumno >> carnetPersonal >> correoPersonal >> contraseniaUnica;
+        while(!file.eof()){
+            if (participanteId != idUnico){
+                file1 << std::left << std::setw(15) << idUnico << std::left << std::setw(15) << nombreAlumno <<
+                        std::left << std::setw(15) << carnetPersonal <<
+                        std::left << std::setw(30) << correoPersonal <<
+                        std::left << std::setw(15) << contraseniaUnica << "\n";
+            }else{
+                found++;
+                cout << "\n\t\t\t\t Borrado de informacion exitoso";
+            }
+            file >> idUnico >> nombreAlumno >> carnetPersonal >> correoPersonal >> contraseniaUnica;
+        }
+        if (found == 0){
+            cout << "\n\t\t\t\t Id alumno no econtrado...";
+        }
+        file1.close();
+        file.close();
+        remove("Alumnos.txt");
+        rename("Record.txt", "Alumnos.txt");
+    }
 }
 
 //Getters

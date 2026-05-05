@@ -47,6 +47,13 @@ class Alumnos
         void obtenerNombreCompleto();
         void registroExitoso();
         std::vector<Alumnos> alumnosPrueba();
+        //Metodos CRUD
+        void menuInsertar();
+        void insertarAlumno();
+        void desplegarAlumno();
+        void modificarAlumno();
+        void buscarAlumno();
+        void borrarAlumno();
 
     protected:
 
@@ -64,6 +71,9 @@ class Alumnos
         std::string fechaNacimientoAlumno;
         std::string carnetPersonal;
         std::string carreraAsignada;
+        std::string contraseniaUnica;
+        std::string idUnico;
+
         int anioCorto;
         //Constantes
         static const int ANIO_ACTUAL = 26;
