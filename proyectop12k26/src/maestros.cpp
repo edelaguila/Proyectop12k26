@@ -1,10 +1,11 @@
 #include "maestros.h"
 #include <iostream>
 #include <cstdlib>
+#include <vector>
 #include <ctime>
 using namespace std;
 
-maestros::maestros()
+Maestros::Maestros()
 {
     nombre = "";
     apellido = "";
@@ -16,29 +17,29 @@ maestros::maestros()
 
 }
 
-void maestros::ingresarDatosPersonales()
+void Maestros::ingresarDatosPersonales()
 {
     cout << "--- Ingreso de datos personales ---" << endl;
     cout << "Ingrese su nombre: ";
     cin >> nombre;
-    cout << "Ingrese su apellido: "
+    cout << "Ingrese su apellido: ";
     cin >> apellido;
 
-    generarCorrero();
-    gernerarCodigo();
+    generarCorreo();
+    generarCodigo();
 }
-void maestros::generarCorrero(){
+void Maestros::generarCorreo(){
     correo = nombre + apellido + "@miumg.edu.gt";
-    cout << "Correo generado : " coorero << endl;
+    cout << "Correo generado : " <<  correo << endl;
 }
 
-void maestros::generarCodigo(){
-    srand(time(0))
-    codigo = 1000 + rand() % 900;
+void Maestros::generarCodigo(){
+    srand(time(0));
+    codigo = 1000 + rand() % 9000;
     cout << "Codigo de seguridad: " << codigo << endl;
 }
 
-void maestros:asignarHorario(){
+void Maestros::asignarHorario(){
     cout <<"--- Asignación de Horario ---" << endl;
     cout << "Seleccione la sede" << endl;
     cout << "1- Sede Zona Portales" << endl;
@@ -49,8 +50,8 @@ void maestros:asignarHorario(){
     int opcionSede;
     cin >> opcionSede;
 
-    diaSemana = 3;
-    cout << "Dias a la semana asignados por el sistema: "<< diaSemana << "días" << endl;
+    diasSemana = 3;
+    cout << "Dias a la semana asignados por el sistema: "<< diasSemana << "días" << endl;
 
     horasClase = 2;
     cout << "Horas por clase asignadas: " << horasClase << "horas" << endl;
@@ -60,15 +61,16 @@ void maestros:asignarHorario(){
     case 2: sede = "Central";break;
     case 3: sede = "Sede Antigua";break;
     case 4: sede = "Sede San Jose Pinula";break;
+    default: sede = "No especificada"; break;
     }
 
     cout << "Sede asignada: " << sede << endl;
 
 }
 
-void maestros::mostrarCarreras(){
+void Maestros::mostrarCarreras(){
     cout << "Carreras disponibles" << endl;
-    vector<carrera> carreras = carrera().datoscarreras;
+    vector<carrera> carreras = carrera().datoscarreras();
 
     for(int i = 0; i < carreras.size(); i++){
         if(carreras[i].getestadocarrera()){
@@ -78,7 +80,7 @@ void maestros::mostrarCarreras(){
     }
 }
 
-void maaestros::mostrarCursosPorCarrera(string codigoCarrera){
+void Maestros::mostrarCursosPorCarrera(string codigoCarrera){
     cout << "Cursos disponibles para esta carrera" << endl;
 
     if(codigoCarrera == "9959"){
@@ -86,10 +88,10 @@ void maaestros::mostrarCursosPorCarrera(string codigoCarrera){
         vector<Cursos> cursos = curso.catalagoCursosIngSistemas();
         int contador = 1;
 
-        for(int i = 0; curso.size(); i++){
-            if(curso[i].getestadoCurso){
+        for(int i = 0; cursos.size(); i++){
+            if(cursos[i].getestadoCurso()){
                 cout << contador << ". " << cursos[i].getnombreCurso() << "Codigo: " << cursos[i].getcodigoCurso() << " " << endl;
-                cout << "Pre-requisito: " cursos[i].getpreRequisitoDeCurso() << end;
+                cout << "Pre-requisito: " << cursos[i].getpreRequisitoDeCurso() << endl;
                 contador++;
             }
         }
@@ -120,39 +122,42 @@ void Maestros::asignarCurso(){
 
 
     vector<carrera> carreras = carrera().datoscarreras();
+
     if(opcionCarrera >= 1 && opcionCarrera <= carreras.size()){
         carreraSeleccionada = carreras[opcionCarrera - 1];
         cout << "Carrera seleccinada: " << carreraSeleccionada.getnombrecarrera() <<endl;
 
         mostrarCursosPorCarrera(carreraSeleccionada.getcodigocarrera());
 
-        vector <Cursos> cursos = curso.catalagoCursosIngSistemas();
-        int opcionCurso;
-        cout << "\nSeleccione el curso que desea:"
-        cin >> opcionCurso;
+        if(carreraSeleccionada.getcodigocarrera() == "9959"){
+            Cursos cursoTemp;
+            vector<Cursos> cursos = cursoTemp.catalagoCursosIngSistemas();
+
+            int opcionCurso;
 
         if(opcionCurso >= 1 && opcionCurso <= cursos.size()){
             curso = cursos[opcionCurso - 1];
             cout << "Asignacion completada" << endl;
             cout << "Curso seleccionado: " << curso.getnombreCurso() << endl;
+            cout << "Codigo del curso: " << curso.getnombreCurso() << endl;
+            cout << "Pre-requisito: " << curso.getpreRequisitoDeCurso() << endl;
 
             asignarHorario();
-
             cout << "Salario: Q" << calcularSalario() << endl;
 
         }
         else{
             cout << "Opcion no valida" << endl;
         }
-
     }
-    else{
-        cout << "Opcion no valida" << endl,
+    }
+    else {
+        cout << "Opcion no valida" << endl;
     }
 }
 
-double maestros::calcularSalario(){
-    double salarioBase = 0;
+double Maestros::calcularSalario(){
+    double salarioBase = (diasSemana * horasClase * 4 * 150);
     double bonoSede = 0;
 
     if(sede == "Central")
@@ -168,34 +173,34 @@ double maestros::calcularSalario(){
 }
 
 
-bool maestros::verificarCodigo(int codigoIngresado){
+bool Maestros::verificarCodigo(int codigoIngresado){
     return codigoIngresado == codigo;
 
 }
 
-void maestros::mostrarResultados(){
+void Maestros::mostrarResultados(){
     cout << "Nombre: " << nombre << " " << apellido << endl;
     cout << "Correro: " << correo<< endl;
     cout << "Codigo: " << codigo << endl;
-    cout << "Curso asignado: " << curso.getNombre() << endl;
+    cout << "Curso asignado: " << curso.getnombreCurso() << endl;
     cout << "Sede: " << sede << endl;
     cout << "Dias por semana: " << diasSemana << endl;
     cout << "Horas por clase: " << horasClase << endl;
-    cout << "Salario final Q: " << calcularSalario<< endl;
+    cout << "Salario final Q: " << calcularSalario ()<< endl;
 
 }
 
-int maestros::getCodigo(){
-    return
+int Maestros::getCodigo(){
+    return codigo;
 }
 
-string maestros::getNombreCurso(){
-    return curso.getNombre();
+string Maestros::getNombreCurso(){
+    return curso.getnombreCurso();
 }
-string maestros::getNombre(){
+string Maestros::getNombre(){
     return nombre;
 }
-string maestros:: getApellido(){
+string Maestros:: getApellido(){
     return apellido;
 }
 

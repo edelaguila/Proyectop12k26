@@ -2,11 +2,9 @@
 #define MAESTROS_H
 
 #include <string>
-<<<<<<< HEAD
 #include "cursos.h"
 #include "carrera.h"
-=======
->>>>>>> 31ae166e5dc124f296f0215c68ec3b843393d089
+
 using namespace std;
 
 class Maestros {
@@ -18,12 +16,8 @@ private:
     string sede;
     int diasSemana;
     int horasClase;
-<<<<<<< HEAD
-    Curso curso;
+    Cursos curso;
     carrera carreraSeleccionada;
-=======
-
->>>>>>> 31ae166e5dc124f296f0215c68ec3b843393d089
 
 public:
     Maestros();
