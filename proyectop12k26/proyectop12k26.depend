@@ -60,8 +60,10 @@
 
 1776870878 c:\users\david\documents\programacion-1\proyectop12k26\proyectop12k26\include\proyecto.h
 
-1777602286 source:c:\users\david\documents\programacion-1\proyectop12k26\proyectop12k26\src\carrera.cpp
-	"Carrera.h"
+1778026338 source:c:\users\david\documents\programacion-1\proyectop12k26\proyectop12k26\src\carrera.cpp
+	"carrera.h"
+	<iostream>
+	<vector>
 
 1777602286 "
 
@@ -69,7 +71,11 @@
 	<iostream>
 	<vector>
 
+<<<<<<< HEAD
 1778027972 c:\users\david\documents\programacion-1\proyectop12k26\proyectop12k26\include\carrera.h
+=======
+1778026338 c:\users\david\documents\programacion-1\proyectop12k26\proyectop12k26\include\carrera.h
+>>>>>>> main
 	<string>
 	<vector>
 
