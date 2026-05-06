@@ -13,11 +13,10 @@ bool Asignacion::validarCarnet(string carnet, vector<Alumnos> listaAlumnos) {
     return false;
 }
 
-void Asignacion::asignarCurso(string carnet, string codCurso, vector<Curso> catalogo, vector<string> cursosAprobados) {
+void Asignacion::asignarCurso(string carnet, string codCurso, vector<Cursos> catalogo, vector<string> cursosAprobados) {
     for (size_t i = 0; i < catalogo.size(); i++) {
         if (catalogo[i].getcodigoCurso() == codCurso) {
             string preReq = catalogo[i].getpreRequisitoDeCurso();
-
             if (preReq == "Ninguno") {
                 cout << "Asignacion exitosa: " << catalogo[i].getnombreCurso() << endl;
                 cursosAsignados.push_back(codCurso);
@@ -29,7 +28,6 @@ void Asignacion::asignarCurso(string carnet, string codCurso, vector<Curso> cata
                         break;
                     }
                 }
-
                 if (cumplido) {
                     cout << "Asignacion exitosa: " << catalogo[i].getnombreCurso() << endl;
                     cursosAsignados.push_back(codCurso);
