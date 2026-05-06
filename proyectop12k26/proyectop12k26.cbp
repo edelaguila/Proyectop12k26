@@ -35,6 +35,14 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 <<<<<<< HEAD
+		<Unit filename="include/Cursos.h" />
+		<Unit filename="include/maestros.h" />
+		<Unit filename="include/proyecto.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Cursos.cpp" />
+		<Unit filename="src/maestros.cpp" />
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 		<Unit filename="include/Alumnos.h" />
 =======
@@ -63,6 +71,7 @@
 		<Unit filename="src/carrera.cpp" />
 		<Unit filename="src/facultades.cpp" />
 		<Unit filename="src/inscipcion.cpp" />
+>>>>>>> 31ae166e5dc124f296f0215c68ec3b843393d089
 		<Unit filename="src/proyecto.cpp" />
 		<Extensions />
 	</Project>
