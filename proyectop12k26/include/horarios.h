@@ -4,19 +4,22 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <fstream> // 👈 recomendable agregarlo aquí
+#include <fstream>
 #include "Cursos.h"
-
+//antony marcelo yllescas figueroa
+// 9959 25 6813
 using namespace std;
 
 class Horarios
 {
 private:
+    // defimos parametros
     string nombreCurso;
     string horaInicio;
     string horaFin;
 
 public:
+    //se definio lo publico
     Horarios();
     Horarios(string nombreCurso, string horaInicio, string horaFin);
 
