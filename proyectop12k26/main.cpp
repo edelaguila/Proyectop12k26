@@ -1,178 +1,150 @@
 #include <iostream>
-#include "Alumnos.h"
-#include "Carrera.h"
-#include "Cursos.h"
-#include "facultades.h"
-#include "inscipcion.h"
-#include "Recepcion.h"
+#include<fstream>
 
-//main de prueba
+#include "usuarios.h"
+#include "bitacora.h"
+
 using namespace std;
-
+void creditosModulo();
+void menuGeneral();
+usuarios usuarioRegistrado;
 int main()
 {
-    int opcion;
+    bool accesoUsuarios;
+    //creditosModulo();
 
-    Alumnos alumnoGlobal;
-
-    bool alumnoRegistrado = false;
-
-    do{
-        system("cls");
-
-        cout << "======================================" << endl;
-        cout << " UNIVERSIDAD MARIANO GALVEZ - SISTEMA " << endl;
-        cout << "======================================" << endl;
-        cout << "1. Registro de Alumno" << endl;
-        cout << "2. Carrera" << endl;
-        cout << "3. Cursos" << endl;
-        cout << "4. Facultad" << endl;
-        cout << "5. Inscripcion" << endl;
-        cout << "6. Recepcion / Sistema de Pagos" << endl;
-        cout << "0. Salir" << endl;
-        cout << "Seleccione una opcion: ";
-        cin >> opcion;
-        cin.ignore();
-
-        switch(opcion)
-        {
-            case 1:
-            {
-                alumnoGlobal.menuRegistro();
-
-                alumnoRegistrado = true;
-
-                system("pause");
-                break;
-            }
-
-            case 2:
-            {
-                Carreras carrera;
-                carrera.ingresarDatos();
-                carrera.mostrarDatos();
-
-                system("pause");
-                break;
-            }
-
-            case 3:
-            {
-                Cursos curso("Programacion", 101, "Ninguno", true);
-
-                cout << "\n--- DATOS DEL CURSO ---" << endl;
-                cout << "Nombre: " << curso.getnombreCurso() << endl;
-                cout << "Codigo: " << curso.getcodigoCurso() << endl;
-                cout << "Pre-Requisito: " << curso.getpreRequisitoDeCurso() << endl;
-                cout << "Estado: " << (curso.getestadoCurso() ? "Activo" : "Inactivo") << endl;
-
-                system("pause");
-                break;
-            }
-
-            case 4:
-            {
-                Facultad facultad;
-                facultad = Facultad(101, "Ingenieria en Sistemas", true, "Privado");
-                facultad.mostrarInformacion();
-
-                system("pause");
-                break;
-            }
-
-            case 5:
-            {
-                Inscripcion inscripcion;
-                inscripcion.ingresarDatos();
-                inscripcion.mostrarDatos();
-
-                system("pause");
-                break;
-            }
-
-            case 6:
-            {
-                int opcionRecepcion;
-
-                do{
-                    system("cls");
-
-                    cout << "===== RECEPCION / SISTEMA DE PAGOS =====" << endl;
-                    cout << "1. Alumno" << endl;
-                    cout << "2. Docente / Maestro" << endl;
-                    cout << "3. Empleado" << endl;
-                    cout << "0. Regresar" << endl;
-                    cout << "Seleccione una opcion: ";
-                    cin >> opcionRecepcion;
-                    cin.ignore();
-
-                    switch(opcionRecepcion)
-                    {
-                        case 1:
-                        {
-                            Recepcion recepcion;
-
-
-                            if(alumnoRegistrado)
-                            {
-                                recepcion.validarAlumno(alumnoGlobal);
-                            }
-                            else
-                            {
-                                cout << "No hay alumno registrado aun." << endl;
-                            }
-
-                            system("pause");
-                            break;
-                        }
-
-                        case 2:
-                        {
-                            Recepcion recepcion;
-                            recepcion.validarDocente();
-
-                            system("pause");
-                            break;
-                        }
-
-                        case 3:
-                        {
-                            Recepcion recepcion;
-                            recepcion.validarEmpleado();
-
-                            system("pause");
-                            break;
-                        }
-
-                        case 0:
-                            break;
-
-                        default:
-                        {
-                            cout << "Opcion invalida." << endl;
-                            system("pause");
-                        }
-                    }
-
-                }while(opcionRecepcion != 0);
-
-                break;
-            }
-
-            case 0:
-            {
-                cout << "Saliendo del sistema..." << endl;
-                break;
-            }
-
-            default:
-            {
-                cout << "Opcion invalida." << endl;
-                system("pause");
-            }
-        }
-
-    }while(opcion != 0);
-
+    accesoUsuarios=usuarioRegistrado.loginUsuarios();
+    if (accesoUsuarios){
+        menuGeneral();
+    }
+    system("cls");
+    cout<<"** Hasta la proxima **";
+    creditosModulo();
     return 0;
+}
+void menuGeneral(){
+    system("cls");
+    int choice;
+	//char x;
+	do
+    {
+	system("cls");
+	cout<<"\t\t\t\t\tUsuario: "<< usuarioRegistrado.getNombre() <<endl;
+	cout<<"\t\t\t-------------------------------"<<endl;
+	cout<<"\t\t\t |   SISTEMA GESTION DE VENTAS  |"<<endl;
+	cout<<"\t\t\t-------------------------------"<<endl;
+	cout<<"\t\t\t 1. Registro e Inscripciòn"<<endl;
+	cout<<"\t\t\t 2. Asignaciòn de Cursos"<<endl;
+	cout<<"\t\t\t 3. Notas"<<endl;
+	cout<<"\t\t\t 4. Tesoreria"<<endl;
+	cout<<"\t\t\t 5. Salir del Sistema"<<endl;
+		cout<<"\t\t\t-------------------------------"<<endl;
+	cout<<"\t\t\tOpcion a escoger:[1/2/3/4/5]"<<endl;
+	cout<<"\t\t\t-------------------------------"<<endl;
+	cout<<"\t\t\tIngresa tu Opcion: ";
+    cin>>choice;
+
+    switch(choice)
+    {
+    case 1:
+        cout << "Aqui se colocara el modulo de registro" << endl;
+        cin.get();
+		break;
+	case 2:
+        cout << "Aqui se colocara el modulo de asignacion" << endl;
+        cin.get();
+		break;
+	case 3:
+        cout << "Aqui se colocara el modulo de notas" << endl;
+        cin.get();
+		break;
+	case 4:
+        cout << "Aqui se colocara el modulo de tesoreria" << endl;
+        cin.get();
+		break;
+	case 5:
+	    cin.get();
+    	break;
+	default:
+		cout<<"\n\t\t\t Opcion invalida...Por favor prueba otra vez..";
+		cin.get();
+	}
+    }while(choice!= 5);
+}
+//void registro(){
+//    int choice;
+    //int x;
+//    do {
+//	system("cls");
+//	cout<<"\t\t\t--------------------------------------------"<<endl;
+//	cout<<"\t\t\t |   SISTEMA REGGESTION DE VENTAS - Catalogos  |"<<endl;
+//	cout<<"\t\t\t--------------------------------------------"<<endl;
+//	cout<<"\t\t\t 1. Clientes"<<endl;
+/*	cout<<"\t\t\t 2. Vendedores"<<endl;
+	cout<<"\t\t\t 3. Cobradores"<<endl;
+	cout<<"\t\t\t 4. Aplicaciones"<<endl;
+	cout<<"\t\t\t 5. Retornar menu anterior"<<endl;
+    cout<<"\t\t\t--------------------------------------------"<<endl;
+	cout<<"\t\t\tOpcion a escoger:[1/2/3/4/5]"<<endl;
+	cout<<"\t\t\t--------------------------------------------"<<endl;
+	cout<<"\t\t\tIngresa tu Opcion: ";
+    cin>>choice;
+
+    switch(choice)
+    {
+    case 1:
+    	do
+    	{
+    		catalogos();
+    		cout<<"\n\t\t\t Agrega otra persona(Y,N): ";
+    		cin>>x;
+		}while(x=='y'||x=='Y');
+		break;
+	case 2:
+		//display();
+		{
+            vendedores vendedor;
+            vendedor.menu();
+		}
+		break;
+	case 3:
+		//modify();
+		break;
+	case 4:
+        {
+            aplicaciones aplicacion;
+            aplicacion.menu();
+		}
+		//search();
+		break;
+	case 5:
+		break;
+	default:
+		cout<<"\n\t\t\t Opcion invalida...Por favor prueba otra vez..";
+		cin.get();
+	}
+    }while(choice!= 5);
+
+}*/
+
+void creditosModulo(){
+string line;
+    //char userInput = ' ';
+    ifstream myFile("creditos.txt");
+    if(myFile.is_open())
+    {
+        //Se obtiene el mapa externo y se general el mapa de celdas
+        while( getline(myFile, line))
+        {
+            cout << line << endl;
+        }
+        myFile.close();
+        cout<<"Presione cualquier tecla para continuar";
+        cin.get();
+    }
+    else
+    {
+        cout << "Error FATAL: el archivo de modulo no pudo ser cargado" << endl;
+        cin.get();
+    }
 }
