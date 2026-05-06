@@ -10,6 +10,7 @@ private:
     int codigoInscripcion;
     int carnetEstudiante;
     string nombreEstudiante;
+    string correoElectronico; // NUEVO
     string carrera;
     string tipoInscripcion;
     string ciclo;
@@ -18,6 +19,15 @@ private:
     string estadoInscripcion;
 
 public:
+    // CRUD
+    void menu();
+    void insertar();
+    void mostrar();
+    void buscar();
+    void modificar();
+    void eliminar();
+
+    // auxiliares
     void ingresarDatos();
     void mostrarDatos();
 };
