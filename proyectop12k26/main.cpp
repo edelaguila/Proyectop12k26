@@ -5,6 +5,7 @@
 #include "facultades.h"
 #include "inscipcion.h"
 #include "Recepcion.h"
+#include "Bancos.h"
 
 //main de prueba
 using namespace std;
