@@ -1,23 +1,22 @@
 #include "carrera.h"
-#include <iostream>     //Creado por David Alegria
+#include <iostream>
 #include <vector>
 using namespace std;
 
- carrera::carrera()
+carrera::carrera()
 {
     //ctor
 }
 
-carrera::carrera(string codigocarrera, string nombrecarrera, bool estadocarrera)
+carrera::carrera(string codigoCarrera, string nombreCarrera, bool estadoCarrera)
 {
-    this -> codigocarrera = codigocarrera;
-    this -> nombrecarrera = nombrecarrera;
-    this -> estadocarrera = estadocarrera;
+    this -> codigoCarrera = codigoCarrera;
+    this -> nombreCarrera = nombreCarrera;
+    this -> estadoCarrera = estadoCarrera;
 
 }
 
-
-vector<carrera> carrera::datoscarreras()
+vector<carrera> carrera::datosCarreras()
 {
     vector<carrera> infocarreras;
     infocarreras.push_back(carrera("9959", "Ingeniera en Sistemas", true));
@@ -26,27 +25,27 @@ vector<carrera> carrera::datoscarreras()
     return infocarreras;
 }
 
-string carrera::getnombrecarrera()
+string carrera::getnombreCarrera()
 {
-    return this -> nombrecarrera;
+    return this -> nombreCarrera;
 }
-string carrera::getcodigocarrera()
+string carrera::getcodigoCarrera()
 {
-    return this -> codigocarrera;
+    return this -> codigoCarrera;
 }
-bool carrera::getestadocarrera()
+bool carrera::getestadoCarrera()
 {
-    return this -> estadocarrera;
+    return this -> estadoCarrera;
 }
-void carrera::setnombrecarrera(string nombrecarrera)
+void carrera::setnombreCarrera(string nombreCarrera)
 {
-    this -> nombrecarrera = nombrecarrera;
+    this -> nombreCarrera = nombreCarrera;
 }
-void carrera::setcodigocarrera(string codigocarrera)
+void carrera::setcodigoCarrera(string codigoCarrera)
 {
-    this -> codigocarrera = codigocarrera;
+    this -> codigoCarrera = codigoCarrera;
 }
-void carrera::setestadocarrera(bool estadocarrera)
+void carrera::setestadoCarrera(bool estadoCarrera)
 {
-    this -> estadocarrera = estadocarrera;
+    this -> estadoCarrera = estadoCarrera;
 }

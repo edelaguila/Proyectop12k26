@@ -1,5 +1,5 @@
-#ifndef carrera_H
-#define carrera_H     //Creado por David Alegria
+#ifndef CARRERA_H
+#define CARRERA_H
 #include <string>
 #include <vector>
 
@@ -8,25 +8,25 @@ class carrera
     public:
         //Constructor
         carrera();
-        carrera(std::string codigocarrera, std::string nombreCarrera, bool estadocarrea);
+        carrera(std::string codigoCarrera, std::string nombreCarrera, bool estadoCarrera);
         //Get
-        std::string getcodigocarrera();
-        std::string getnombrecarrera();
-        bool getestadocarrera();
+        std::string getcodigoCarrera();
+        std::string getnombreCarrera();
+        bool getestadoCarrera();
         //Set
-        void setcodigocarrera(std::string codigocarera);
-        void setnombrecarrera(std::string nombrecarerra);
-        void setestadocarrera(bool estadocarrera);
+        void setcodigoCarrera(std::string codigoCarera);
+        void setnombreCarrera(std::string nombreCarerra);
+        void setestadoCarrera(bool estadoCarrera);
         //Metodos
-        std::vector<carrera> datoscarreras();
+        std::vector<carrera> datosCarreras();
 
 
     protected:
 
     private:
-        std::string codigocarrera;
-        std::string nombrecarrera;
-        bool estadocarrera;
+        std::string codigoCarrera;
+        std::string nombreCarrera;
+        bool estadoCarrera;
 };
 
 #endif // CARRERA_H
