@@ -15,6 +15,7 @@ Bancos::Bancos()
 bool Bancos::crearCuenta(string nombreCliente, double monto, string nombreBanco)
 {
     this->idCuenta = generadorTarjetasCuentas();
+
     this->nombreCliente = nombreCliente;
     this->saldo = monto;
     this->movimiento = monto;
