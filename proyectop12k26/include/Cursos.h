@@ -22,6 +22,13 @@ class Cursos
         void setpreRequisitoDeCurso(std::string preRequisitoDeCursos);
         //Metodos
         std::vector<Cursos> catalagoCursosIngSistemas();
+        //Metodos CRUD
+        void menuInsertarCursos();
+        void insertarCurso();
+        void desplegarCurso();
+        void modificarCurso();
+        void buscarCurso();
+        void borrarCurso();
 
 
     protected:
@@ -30,6 +37,7 @@ class Cursos
         std::string nombreCurso;
         std::string preRequisitoDeCurso;
         std::string codigoCurso;
+        std::string idUnicoCurso;
         bool estadoCurso;
 
 };

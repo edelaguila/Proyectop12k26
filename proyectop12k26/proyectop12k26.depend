@@ -113,7 +113,18 @@
 
 1777478125 c:\users\fcast\onedrive\documentos\tercer semestre\programaci”n i\proyectop12k26\proyectop12k26\include\facultades.h
 
+<<<<<<< HEAD
+1777501103 source:c:\users\david\documents\programacion-1\proyectop12k26\proyectop12k26\src\alumnos.cpp
+	"Alumnos.h"
+	<iostream>
+	<string>
+	<cstdlib>
+	<ctime>
+	<thread>
+	<chrono>
+=======
 1777615494 source:c:\users\david\documents\programacion-1\proyectop12k26\proyectop12k26\src\alumnos.cpp
+>>>>>>> d1e7e24fd1aeaddb897872e200ed48790630eeff
 	"Alumnos.h"
 	"carrera.h"
 	<iostream>
@@ -136,12 +147,17 @@
 
 1777501103 c:\users\david\documents\programacion-1\proyectop12k26\proyectop12k26\include\facultades.h
 
+<<<<<<< HEAD
+1777615752 source:c:\users\fcast\onedrive\documentos\tercer semestre\programaci”n i\proyectop12k26\proyectop12k26\src\carrera.cpp
+	"carrera.h"
+=======
 1777606704 source:c:\users\fcast\onedrive\documentos\tercer semestre\programaci”n i\proyectop12k26\proyectop12k26\src\carrera.cpp
 	"Carrera.h"
+>>>>>>> d1e7e24fd1aeaddb897872e200ed48790630eeff
 	<iostream>
 	<vector>
 
-1777606704 c:\users\fcast\onedrive\documentos\tercer semestre\programaci”n i\proyectop12k26\proyectop12k26\include\carrera.h
+1777615752 c:\users\fcast\onedrive\documentos\tercer semestre\programaci”n i\proyectop12k26\proyectop12k26\include\carrera.h
 	<string>
 	<vector>
 
