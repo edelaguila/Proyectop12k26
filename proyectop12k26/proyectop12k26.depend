@@ -188,16 +188,16 @@
 	<iostream>
 	"bitacora.h"
 
-1778081548 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\main.cpp
+1778085177 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\main.cpp
 	<iostream>
 	<fstream>
 	"usuarios.h"
 	"bitacora.h"
 
-1778081548 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\usuarios.h
+1778085177 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\usuarios.h
 	<iostream>
 
-1778081548 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\bitacora.h
+1778085177 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\bitacora.h
 	<iostream>
 
 1778081548 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\alumnos.cpp
@@ -212,7 +212,7 @@
 1778081548 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\alumnos.h
 	<string>
 
-1778081548 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\bitacora.cpp
+1778085177 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\bitacora.cpp
 	"bitacora.h"
 	<iostream>
 	<fstream>
@@ -221,21 +221,21 @@
 	<conio.h>
 	<iomanip>
 
-1778081548 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\carrera.cpp
+1778085177 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\carrera.cpp
 	"Carrera.h"
 	<iostream>
 	<vector>
 
-1778081548 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\carrera.h
+1778085177 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\carrera.h
 	<string>
 	<vector>
 
-1778081548 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\cursos.cpp
+1778085177 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\cursos.cpp
 	"Cursos.h"
 	<string>
 	<vector>
 
-1778081548 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\cursos.h
+1778085177 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\cursos.h
 	<string>
 	<vector>
 
@@ -258,11 +258,32 @@
 
 1778081548 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\proyecto.h
 
-1778081548 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\usuarios.cpp
+1778085177 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\usuarios.cpp
 	"usuarios.h"
 	<fstream>
 	<cstdlib>
 	<conio.h>
 	<iostream>
 	"bitacora.h"
+
+1778085177 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\bancos.cpp
+	"Bancos.h"
+	<iostream>
+	<random>
+	<string>
+	<fstream>
+	<iomanip>
+
+1778102732 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\bancos.h
+	<string>
+
+1778081548 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\recepcion.cpp
+	"Recepcion.h"
+	<iostream>
+	<string>
+
+1778081548 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\recepcion.h
+	<iostream>
+	<string>
+	"Alumnos.h"
 
