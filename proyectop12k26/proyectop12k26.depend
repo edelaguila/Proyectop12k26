@@ -188,16 +188,20 @@
 	<iostream>
 	"bitacora.h"
 
-1778085177 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\main.cpp
+1778117494 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\main.cpp
 	<iostream>
 	<fstream>
 	"usuarios.h"
 	"bitacora.h"
+	"Bancos.h"
+	"Recepcion.h"
+	"GeneradorConstancias.h"
+	"Alumnos.h"
 
-1778085177 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\usuarios.h
+1778114315 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\usuarios.h
 	<iostream>
 
-1778085177 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\bitacora.h
+1778114315 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\bitacora.h
 	<iostream>
 
 1778081548 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\alumnos.cpp
@@ -212,7 +216,7 @@
 1778081548 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\alumnos.h
 	<string>
 
-1778085177 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\bitacora.cpp
+1778114315 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\bitacora.cpp
 	"bitacora.h"
 	<iostream>
 	<fstream>
@@ -221,21 +225,21 @@
 	<conio.h>
 	<iomanip>
 
-1778085177 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\carrera.cpp
+1778114315 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\carrera.cpp
 	"Carrera.h"
 	<iostream>
 	<vector>
 
-1778085177 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\carrera.h
+1778114315 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\carrera.h
 	<string>
 	<vector>
 
-1778085177 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\cursos.cpp
+1778114315 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\cursos.cpp
 	"Cursos.h"
 	<string>
 	<vector>
 
-1778085177 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\cursos.h
+1778114315 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\cursos.h
 	<string>
 	<vector>
 
@@ -258,7 +262,7 @@
 
 1778081548 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\proyecto.h
 
-1778085177 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\usuarios.cpp
+1778114315 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\usuarios.cpp
 	"usuarios.h"
 	<fstream>
 	<cstdlib>
@@ -266,7 +270,7 @@
 	<iostream>
 	"bitacora.h"
 
-1778085177 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\bancos.cpp
+1778114315 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\bancos.cpp
 	"Bancos.h"
 	<iostream>
 	<random>
@@ -274,16 +278,25 @@
 	<fstream>
 	<iomanip>
 
-1778102732 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\bancos.h
+1778115018 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\bancos.h
 	<string>
 
-1778081548 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\recepcion.cpp
+1778115018 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\recepcion.cpp
 	"Recepcion.h"
 	<iostream>
 	<string>
 
-1778081548 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\recepcion.h
+1778115018 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\recepcion.h
 	<iostream>
 	<string>
 	"Alumnos.h"
+
+1778116724 c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\include\generadorconstancias.h
+	<iostream>
+	<string>
+
+1778116627 source:c:\users\danie\documents\actividades programacion\proyectop12k26\proyectop12k26\src\generadorconstancias.cpp
+	"GeneradorConstancias.h"
+	<cstdlib>
+	<ctime>
 
