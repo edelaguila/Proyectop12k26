@@ -37,6 +37,7 @@
 		<Unit filename="include/Alumnos.h" />
 		<Unit filename="include/Bancos.h" />
 		<Unit filename="include/Cursos.h" />
+		<Unit filename="include/GeneradorConstancias.h" />
 		<Unit filename="include/Recepcion.h" />
 		<Unit filename="include/bitacora.h" />
 		<Unit filename="include/carrera.h" />
