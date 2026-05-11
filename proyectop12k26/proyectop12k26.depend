@@ -796,7 +796,7 @@
 	<string>
 	<vector>
 
-1778473662 c:\users\javier\downloads\proyectofinal\proyectop12k26\proyectop12k26\include\maestros.h
+1778513375 c:\users\javier\downloads\proyectofinal\proyectop12k26\proyectop12k26\include\maestros.h
 	<string>
 	<vector>
 	<fstream>
@@ -826,4 +826,37 @@
 	<conio.h>
 	<iostream>
 	"bitacora.h"
+
+1778511849 source:c:\users\javier\downloads\proyectofinal\proyectop12k26\proyectop12k26\src\configuracionevaluacion.cpp
+	<iostream>
+	"ConfiguracionEvaluacion.h"
+
+1778511849 c:\users\javier\downloads\proyectofinal\proyectop12k26\proyectop12k26\include\configuracionevaluacion.h
+	<string>
+	<vector>
+	"Cursos.h"
+
+1778512450 source:c:\users\javier\downloads\proyectofinal\proyectop12k26\proyectop12k26\src\registrarnotas.cpp
+	<iostream>
+	"RegistrarNotas.h"
+
+1778510576 c:\users\javier\downloads\proyectofinal\proyectop12k26\proyectop12k26\include\registrarnotas.h
+	<string>
+	<vector>
+	"ConfiguracionEvaluacion.h"
+	"Alumnos.h"
+	"bitacora.h"
+	"reportes.h"
+
+1778512103 c:\users\javier\downloads\proyectofinal\proyectop12k26\proyectop12k26\include\reportes.h
+	<string>
+	<fstream>
+
+1778512103 source:c:\users\javier\downloads\proyectofinal\proyectop12k26\proyectop12k26\src\reportes.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<iomanip>
+	<cstdio>
+	"reportes.h"
 
