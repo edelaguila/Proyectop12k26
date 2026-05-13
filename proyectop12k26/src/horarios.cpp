@@ -215,13 +215,12 @@ void Horarios::menu()
         cout<<"     SISTEMA UNIVERSITARIO UMG        "<<endl;
         cout<<"______________________________________"<<endl;
         cout<<"1. Validar constancia"<<endl;
-        cout<<"2. Realizar asignaciones"<<endl;
-        cout<<"3. Elegir jornada"<<endl;
-        cout<<"4. Generar horario"<<endl;
-        cout<<"5. Mostrar horario"<<endl;
-        cout<<"6. Modificar horario"<<endl;
-        cout<<"7. Guardar horario"<<endl;
-        cout<<"8. Salir"<<endl;
+        cout<<"2. Elegir jornada"<<endl;
+        cout<<"3. Generar horario"<<endl;
+        cout<<"4. Mostrar horario"<<endl;
+        cout<<"5. Modificar horario"<<endl;
+        cout<<"6. Guardar horario"<<endl;
+        cout<<"7. Salir"<<endl;
         cout<<"Seleccione opcion: ";
         cin>>opcion;
         switch(opcion)
@@ -245,11 +244,6 @@ void Horarios::menu()
         }
         case 2:
         {
-            asignacion.menuAsignacion();
-            break;
-        }
-        case 3:
-        {
             int jornada;
             cout<<"1. Entre semana"<<endl;
             cout<<"2. Fin de semana"<<endl;
@@ -264,7 +258,7 @@ void Horarios::menu()
             }
             break;
         }
-        case 4:
+        case 3:
         {
             vector<Cursos> catalogoCompleto=catalogo.catalagoCursosIngSistemas();
 
@@ -284,22 +278,22 @@ void Horarios::menu()
 
             break;
         }
-        case 5:
+        case 4:
         {
             mostrar(horario);
             break;
         }
-        case 6:
+        case 5:
         {
             modificar(horario);
             break;
         }
-        case 7:
+        case 6:
         {
             guardarEnArchivo(horario);
             break;
         }
-        case 8:
+        case 7:
         {
             cout<<"Saliendo..."<<endl;
             break;

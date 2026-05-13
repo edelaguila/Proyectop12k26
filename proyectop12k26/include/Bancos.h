@@ -12,15 +12,13 @@ class Bancos
         Bancos();
         virtual ~Bancos();
 
-        // MÃ©todos de InformaciÃ³n y Procesos
-        bool InfoTransferencia(string nombreCliente, long long numeroTarjeta, int numeroCarnet);
-        bool InfoPagoPlanilla(string nombreCliente, int idCuenta, int codigoCatedratico);
-        bool procesoTransferencia(long long numeroTarjeta, double monto);
-        bool procesoPagoPlanilla(int idCuenta, double monto);
-        double montoCobro(int carnet);
-        double montoPago(int codigo);
+        // Métodos de Información y Procesos
+        bool InfoTransferencia(string nombreBanco, string nombreCliente, long long numeroTarjeta);
+        bool InfoPagoPlanilla(string nombreBanco, string nombreCliente, int idCuenta);
+        bool procesoTransferencia(long long numeroTarjeta, double monto, double saldo);
+        bool procesoPagoPlanilla(int idCuenta, double monto, double saldoCuenta);
 
-        // MÃ©todos de GestiÃ³n de Cuenta
+        // Métodos de Gestión de Cuenta
         bool crearCuenta(string nombreCliente, double monto, string nombreBanco);
         bool guardarCuenta(int idCuenta, string nombreCliente, double saldo, double movimiento, long long numeroTarjeta, string nombreBanco);
         int generadorTarjetasCuentas();
@@ -28,10 +26,10 @@ class Bancos
     private:
         string nombreCliente;
         string nombreBanco;
-        double saldo, movimiento;
+        double saldo;
+        double movimiento;
         int idCuenta;
         long long numeroTarjeta;
-        int numeroCarnet;
 };
 
 #endif
