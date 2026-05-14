@@ -1,8 +1,5 @@
 #include "ModuloPagos.h"
-#include "validacionpagos0.h"
-//#include "validacionpagos0.cpp"
 #include <iostream>
-#include <iomanip>
 using namespace std;
 
 void ModuloPagos::ejecutar()
@@ -39,8 +36,7 @@ do {
         cin >> opcion2;
         system("cls");
         asignaciones.tipodePago(opcion2,numeroT,nombrealumno,date,codseguro);
-        cout <<"\nAbriendo el panel de gestion de pagos..."<<endl;
-        asignaciones.menuGestionPagos(numeroT, opcion2);
+
      }
      else if(opcion == 3){
         cout<<"Regresando al menu principal..."<<endl;
