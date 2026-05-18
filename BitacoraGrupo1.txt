@@ -1,8 +1,510 @@
+commit c40c2e3bc5f42ec3f668dff3c267104fd06a536b
+Merge: 6bb8138 a36e076
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Mon May 18 08:58:15 2026 -0600
+
+    Merge pull request #114 from damadop-commits/funcion_montoPago
+    
+    funcion montoPago
+
+commit 6bb8138a5521f27a0c4a61e81f8aa1f1d5ef6600
+Merge: bc0b6e0 d84ece6
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Mon May 18 08:57:18 2026 -0600
+
+    Merge pull request #113 from David-Alegria/opcion_regresar_9959_25_288
+    
+    Opciones a regresar
+
+commit d84ece604c81ffbab25f74cdd106cda913a65d60
+Merge: 3068f73 bc0b6e0
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Mon May 18 08:56:54 2026 -0600
+
+    Merge branch 'main' into opcion_regresar_9959_25_288
+
+commit bc0b6e0af908a5a550a247400cf5ff312e451f9d
+Merge: f51ce43 4496764
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Mon May 18 08:55:20 2026 -0600
+
+    Merge pull request #111 from David-Alegria/Correcion_Bucle_clase_carrera_9959_23_11277
+    
+    Correcion clase carrera
+
+commit a36e0762490adac397d145619d1e505bb83783e0
+Author: Moises De Leon <mdeleonp25@miumg.edu.gt>
+Date:   Mon May 18 08:45:18 2026 -0600
+
+    funcion montoPago
+
+commit 3068f7350c34d1e8a44b0a750095546e182b2750
+Author: jcastillov17-byte <jcastillov17@miumg.edu.gt>
+Date:   Mon May 18 08:39:39 2026 -0600
+
+    Opciones a regresar
+
+commit 44967646cb4a68883435c3197965d95786382f49
+Author: David Alegria <dalegriac@miumg.edu.gt>
+Date:   Sun May 17 22:17:45 2026 -0600
+
+    Correcion clase carrera
+
+commit f51ce4360c14e267b65d41819c463dc8d1723d69
+Merge: 14d0a62 37cd563
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Sun May 17 21:43:16 2026 -0600
+
+    Merge pull request #110 from damadop-commits/agregando_funcion_montoCobro_9959_25_18795
+    
+    funcion de montoCobro
+
+commit 37cd563a2d34f6995c3a504056b0833ffd369938
+Merge: 4d14457 14d0a62
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Sun May 17 21:43:07 2026 -0600
+
+    Merge branch 'main' into agregando_funcion_montoCobro_9959_25_18795
+
+commit 14d0a62a05fded40e5665d88b8bde6e680966fe5
+Merge: 53b7b70 9493a45
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Sun May 17 21:42:34 2026 -0600
+
+    Merge pull request #109 from David-Alegria/agregando_opcion_menu_registro_9959_25_288
+    
+    Agregando opcion cursos y carrera
+
+commit 9493a45f24f89c75beb88c9d661ab4c9a1771553
+Merge: 7f3d12d 53b7b70
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Sun May 17 21:42:26 2026 -0600
+
+    Merge branch 'main' into agregando_opcion_menu_registro_9959_25_288
+
+commit 53b7b70af1f06a682eca67864948c2804caf7860
+Merge: 98b8e3a 7bca27b
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Sun May 17 21:41:24 2026 -0600
+
+    Merge pull request #108 from damadop-commits/recepcion_de_pagos_9959_25_3251_y_9959_25_2015
+    
+    Subiendo Ultima Actualzacion de Recepcion ya Completa con Montos de A…
+
+commit 4d14457ad107207ecdaffc1f8363d326a900031a
+Author: Moises De Leon <mdeleonp25@miumg.edu.gt>
+Date:   Sun May 17 12:54:43 2026 -0600
+
+    funcion de montoCobro
+
+commit 7f3d12d307451be0c3265d113b43fb8f4ba6872b
+Author: jcastillov17-byte <jcastillov17@miumg.edu.gt>
+Date:   Sun May 17 11:28:40 2026 -0600
+
+    Agregando opcion cursos y carrera
+
+commit 7bca27b523efcd9706b71fb9c513f13370456058
+Author: damadop-commits <damadop@miumg.edu.gt>
+Date:   Sun May 17 09:48:37 2026 -0600
+
+    Subiendo Ultima Actualzacion de Recepcion ya Completa con Montos de Archivos
+
+commit 98b8e3a64b5d17c8b991997f6f0e8146b70011d8
+Merge: 374e085 13404d9
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Sun May 17 09:16:05 2026 -0600
+
+    Merge pull request #107 from edelaguila/revert-106-main
+    
+    Revert "MenuNotas"
+
+commit 13404d9c5b13f3d587e21975abfe24b6ec90132f
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Sun May 17 09:15:48 2026 -0600
+
+    Revert "MenuNotas"
+
+commit 374e085bc736eb4a4cf4a42451af2088394c7e28
+Merge: 83e3902 827bde3
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Fri May 15 21:30:37 2026 -0600
+
+    Merge pull request #106 from Javito2007/main
+    
+    MenuNotas
+
+commit 827bde37f1ff502617c32fb406531462013c8578
+Author: JhonnyFlores <Jhonny.fl2006@gmail.com>
+Date:   Fri May 15 21:15:06 2026 -0600
+
+    Actualización De MenuNotas y eliminacion de .depend
+
+commit dfed45bb81b6454c3db198a2729534914b067d4b
+Author: JhonnyFlores <Jhonny.fl2006@gmail.com>
+Date:   Fri May 15 21:08:08 2026 -0600
+
+    Actualizacion de Notas y Eliminacion de .depend
+
+commit 83e39021a3a1f2164be21be5f74269bc44c23465
+Merge: af3a6a0 74eb607
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Fri May 15 20:13:44 2026 -0600
+
+    Merge pull request #105 from williamcanton2179/Respaldos_Jonathan
+    
+    Te quiero william²,respaldos actualizados con opcion del dire
+
+commit af3a6a02920a42e937ab3000e1724c9fd38b3033
+Merge: 6a358b1 2487322
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Fri May 15 20:13:31 2026 -0600
+
+    Merge pull request #104 from williamcanton2179/antony-marcelo-horarios
+    
+    horarios hola mundo-Anthony
+
+commit 6a358b1ff988515545b782fb0a2fa999fb168397
+Merge: bece71f 481be78
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Fri May 15 20:13:18 2026 -0600
+
+    Merge pull request #103 from David-Alegria/Subiendo_archivo_txt_9959_23_11277
+    
+    Subiendo archivo .txt
+
+commit 481be78e9f8f3682f08ab7344387788781ca7eb0
+Merge: a71e9f3 bece71f
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Fri May 15 20:13:06 2026 -0600
+
+    Merge branch 'main' into Subiendo_archivo_txt_9959_23_11277
+
+commit bece71f5a85918b9897dc67a0499153229303b42
+Merge: 7836407 bfd2a15
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Fri May 15 20:12:28 2026 -0600
+
+    Merge pull request #102 from David-Alegria/4_mantenimiento_clase_maestros
+    
+    4 mantenimiento clase maestros
+
+commit 7836407c237df6896313d4b616343ef628845234
+Merge: 84d643f d31e047
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Fri May 15 20:12:15 2026 -0600
+
+    Merge pull request #101 from williamcanton2179/Arreglos6-9959-23-1290
+    
+    Arreglos en el CRUD y archivos txt 9959-23-1290
+
+commit 74eb60731e09b33c2820dba170c070aa8c3a458d
+Author: Jonathan Chamalé <chamaledelcidjonathaneladio@gmail.com>
+Date:   Fri May 15 20:00:16 2026 -0600
+
+    Te quiero william²,respaldos actualizados con opcion del dire
+
+commit 2487322695272c377ebe188c811bb679ca277cba
+Author: 11antony <yllescasantony636@gmail.com>
+Date:   Fri May 15 19:31:07 2026 -0600
+
+    horarios hola mundo
+
+commit a71e9f3a371fd88caff2c6881fc19f1f48a16fa8
+Author: David Alegria <dalegriac@miumg.edu.gt>
+Date:   Fri May 15 19:10:01 2026 -0600
+
+    Subiendo archivo .txt
+
+commit bfd2a15183915602e1e9c298fea2d6861ebc5945
+Author: Abner Muñoz <abnerxmaa@gmail.com>
+Date:   Fri May 15 19:02:48 2026 -0600
+
+    Arreglo desplegar
+
+commit d31e0471240d98005b91c5268b46b4b4fb326c50
+Author: Josue-Molina <jmolinar8@miumg.edu.gt>
+Date:   Fri May 15 17:36:33 2026 -0600
+
+    Modificaciones pequeñas y visuales
+
+commit aee2b46996b19dc277371aa0fc4166af4f98dde3
+Author: Josue-Molina <jmolinar8@miumg.edu.gt>
+Date:   Fri May 15 17:19:27 2026 -0600
+
+    Arreglos en el CRUD y archivos txt
+
+commit e8e6f2802a1f28936d75afaeec1faedaa0b1a95e
+Author: Abner Muñoz <abnerxmaa@gmail.com>
+Date:   Fri May 15 10:16:20 2026 -0600
+
+    Cuarto mantenimiento final de maestros
+
+commit 84d643fdff533e50c8028d532bfee458ba833b9c
+Merge: 6424cce ccbdcd5
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Fri May 15 09:42:11 2026 -0600
+
+    Merge pull request #100 from damadop-commits/modificando_bancos_9959_25_18795
+    
+    modificando funciones de pago y transferencia
+
+commit ccbdcd5bd9929278175a0fc4db064dfc29845eee
+Merge: 97a1a59 6424cce
+Author: damadop-commits <damadop@miumg.edu.gt>
+Date:   Fri May 15 09:40:58 2026 -0600
+
+    Merge branch 'main' into modificando_bancos_9959_25_18795
+
+commit 6424ccecdeb5f44c1dded0d4870f48ec3193bbb8
+Merge: d6b3df6 914f093
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Fri May 15 09:21:30 2026 -0600
+
+    Merge pull request #97 from williamcanton2179/ImplementacionDeSemestres-9959-25-8558
+    
+    Integracion Asignaciones 9959-25-8558
+
+commit d6b3df6a917f50d36acb42d8b98b52e06ae9345c
+Merge: b85ebcb 291ce1f
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Fri May 15 09:21:06 2026 -0600
+
+    Merge pull request #96 from williamcanton2179/Arreglos5-9959-23-1290
+    
+    Menu personal arreglado, CRUD funcionando 9959-23-1290
+
+commit 914f0931a27103fe2547e9c25eb1445a591156ce
+Author: William Canton <williamcanton2179@gmail.com>
+Date:   Fri May 15 09:14:03 2026 -0600
+
+    Inclucion de todos los archivos en el .cpp
+
+commit b85ebcb3e3d5b5d9443ed48f6a87ae348bc8ed9a
+Merge: 87d32f4 25fae52
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Fri May 15 09:08:57 2026 -0600
+
+    Merge pull request #93 from damadop-commits/arreglando_constancia_9959_25_8978
+    
+    Arreglando constancia 9959 25 8978
+
+commit 821918c9c6fe80ea6c81ac66697e956f92b0b4cb
+Author: William Canton <williamcanton2179@gmail.com>
+Date:   Fri May 15 09:03:14 2026 -0600
+
+    Implementacion de Ciclos con los requisitos
+
+commit 7500d13dd426425a4b91cbab4e6922b182b1c0fa
+Author: William Canton <williamcanton2179@gmail.com>
+Date:   Fri May 15 08:47:58 2026 -0600
+
+    Implementacion de los 10 semestres con sus cursos, submenu de ciclos
+
+commit 291ce1f5265a8a84b95622df2838b65d5a6dc9b7
+Author: Josue-Molina <jmolinar8@miumg.edu.gt>
+Date:   Thu May 14 21:56:18 2026 -0600
+
+    Menu personal arreglado, CRUD funcionando
+
+commit 97a1a599648dfee4ede178eb419754bc4934cf8a
+Author: Moises De Leon <mdeleonp25@miumg.edu.gt>
+Date:   Thu May 14 16:32:13 2026 -0600
+
+    modificando funciones de pago y transferencia
+
+commit 25fae52acf087b8dae2b9ed5b9623fc8c9e1c4ad
+Merge: 3fa827f 87d32f4
+Author: Fernando Andrino <aandrinog@miumg.edu.gt>
+Date:   Thu May 14 16:08:45 2026 -0600
+
+    Constancias
+
+commit 3fa827f6398e0598b394643479541ab07fc88456
+Author: Fernando Andrino <aandrinog@miumg.edu.gt>
+Date:   Thu May 14 16:04:38 2026 -0600
+
+    Menu constancias
+
+commit 87d32f486815fb295836389d56ee2c8bd69aa791
+Merge: 44148a0 53a3077
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Thu May 14 05:01:40 2026 -0600
+
+    Merge pull request #92 from David-Alegria/Mantenimiento_final_clase_inscripcion_9959_23_11277
+    
+    Mantenimiento final clase maestros
+
+commit 53a3077b69145fdf55ee4af767bc408341b942ec
+Merge: 6359a90 44148a0
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Thu May 14 05:01:29 2026 -0600
+
+    Merge branch 'main' into Mantenimiento_final_clase_inscripcion_9959_23_11277
+
+commit 44148a05ab5e8a0b12cf696ebc8394f0e85c1d6f
+Merge: 1e9a41a 6fd1353
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Thu May 14 05:00:56 2026 -0600
+
+    Merge pull request #91 from David-Alegria/3_mantenimiento_final_maestros_9959_25_13959
+    
+    Ultimo mantenimineto clase maestros 9959-25-13959
+
+commit 1e9a41aa15d8bdd67652cb7f0e424510c3b74c79
+Merge: 5ac6870 9c5a25d
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Thu May 14 05:00:42 2026 -0600
+
+    Merge pull request #90 from damadop-commits/Recepcion_pagos_modificado_9959_25_2015
+    
+    Cambios de Recepcion
+
+commit 9c5a25d030425cc593cf3d2884bee1d1998a6d15
+Merge: dbf2f70 5ac6870
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Thu May 14 04:59:41 2026 -0600
+
+    Merge branch 'main' into Recepcion_pagos_modificado_9959_25_2015
+
+commit 5ac68702e07dc0589d88d90fb13c73707689b178
+Merge: 190f752 73cc358
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Thu May 14 04:59:11 2026 -0600
+
+    Merge pull request #89 from damadop-commits/Pull_Request_Fase_III
+    
+    Pull request fase III
+
+commit 6359a902cbe87ef887513265bc9fb08f6d96215f
+Author: David Alegria <dalegriac@miumg.edu.gt>
+Date:   Wed May 13 22:06:48 2026 -0600
+
+    Mantenimiento final clase maestros
+
+commit 6fd1353c631c90dd0d919cb5cc49d162e9414393
+Author: Abner Muñoz <abnerxmaa@gmail.com>
+Date:   Wed May 13 20:55:24 2026 -0600
+
+    Ultimo mantenimineto clase maestros 9959-25-13959
+
+commit dbf2f701700a66a8ae78eea8d5f73db5f560bd43
+Author: Katheryn Reyes <kreyesb5@miumg.edu.gt>
+Date:   Wed May 13 20:15:49 2026 -0600
+
+    Cambios
+
+commit 73cc358a114e2f7520c26b0f8469694f0a0bbf69
+Author: damadop-commits <damadop@miumg.edu.gt>
+Date:   Wed May 13 19:46:55 2026 -0600
+
+    Agregando Bitacora de git
+
 commit 10cbac43d0bde64260eb974649b4914f49875c93
 Author: damadop-commits <damadop@miumg.edu.gt>
 Date:   Wed May 13 19:29:35 2026 -0600
 
     Pull Request Fase III
+
+commit 190f7526ad5616de5d704f06ac8cd5c6141949f3
+Merge: da2b539 e55de51
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Wed May 13 19:27:13 2026 -0600
+
+    Merge pull request #88 from williamcanton2179/Arreglos4-9959-23-1290
+    
+    Arreglos en la clase validacionpagos0 y modulopagos
+
+commit da2b539af9d12220e67dd361c88a8f553c21af73
+Merge: ab40a07 9d73a9c
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Wed May 13 19:27:00 2026 -0600
+
+    Merge pull request #87 from williamcanton2179/IntegracionMenus-9959-25-8558
+    
+    Entrega limpia: Solo correccion de Asignaciones y Menus ya integrados
+
+commit ab40a07b529557c4047597af12c698d6930e982a
+Merge: 56e2b76 c896295
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Wed May 13 19:26:46 2026 -0600
+
+    Merge pull request #85 from williamcanton2179/Respaldo_jonathan
+    
+    te quiero william,archivos respaldo listos
+
+commit 56e2b760e4dce93327168d4b56a5f10d7b4181a4
+Merge: 0570eda c66c835
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Wed May 13 19:26:27 2026 -0600
+
+    Merge pull request #84 from williamcanton2179/antony-yllescas-hola-mundo
+    
+    Antony yllescas arreglando horarios
+
+commit c66c8357b18cfba93ad7c54cf6ad54f3e0785c0b
+Merge: c71c667 0570eda
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Wed May 13 19:26:15 2026 -0600
+
+    Merge branch 'main' into antony-yllescas-hola-mundo
+
+commit 0570eda717296e24d4f3a5a9a40ae3853addb89e
+Merge: 018bc7e a3aa86d
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Wed May 13 19:25:14 2026 -0600
+
+    Merge pull request #80 from David-Alegria/modificacion_cursos_9959_25_288
+    
+    Modificacion cursos 9959 25 288
+
+commit e55de514005c039b9e4425ac8a98e4f946654194
+Author: William Canton <williamcanton2179@gmail.com>
+Date:   Wed May 13 18:42:32 2026 -0600
+
+    Resolviendo conflictos con main
+
+commit 5855ace4631ce5830405fbde6961cd9327b3d533
+Author: Josue-Molina <jmolinar8@miumg.edu.gt>
+Date:   Wed May 13 18:33:03 2026 -0600
+
+    Arreglos en la clase validacionpagos0 y modulopagos
+
+commit 9d73a9cef80fe5ea88e9715d1f2223d139c30370
+Author: William Canton <williamcanton2179@gmail.com>
+Date:   Wed May 13 18:18:40 2026 -0600
+
+    Entrega limpia: Solo correccion de Asignaciones y Menus ya integrados con todo Asignaciones
+
+commit c896295cc29b92287552601211a65afa7b9375da
+Author: Jonathan Chamalé <chamaledelcidjonathaneladio@gmail.com>
+Date:   Wed May 13 17:15:26 2026 -0600
+
+    te quiero william,archivos respaldo listos
+
+commit c71c667031a67f85ae7d0c9cec2ef44feff14086
+Author: William Canton <williamcanton2179@gmail.com>
+Date:   Wed May 13 16:56:24 2026 -0600
+
+    Restaurando archivo .depend eliminado por error
+
+commit 35756f210dfdcd40e90947de314bdd230209231f
+Author: 11antony <yllescasantony636@gmail.com>
+Date:   Wed May 13 16:51:19 2026 -0600
+
+    antenimiento horarios
+
+commit a3aa86dc8c1214644d1b34a059dcb80590724797
+Author: jcastillov17-byte <jcastillov17@miumg.edu.gt>
+Date:   Wed May 13 13:28:07 2026 -0600
+
+    arreglando codigo
+
+commit d781294f3af04f73c5c6671eef970ea5e03fbc09
+Merge: 018bc7e 7f30b82
+Author: David Alegria <dalegriac@miumg.edu.gt>
+Date:   Wed May 13 13:01:44 2026 -0600
+
+    arreglando conflictos
 
 commit 018bc7eda5c3dceaf97e8806a7aec12bce518e15
 Merge: 6cc0d06 d03e144
@@ -29,6 +531,12 @@ Date:   Wed May 13 10:43:42 2026 -0600
 
     Merge branch 'main' into arreglando_constancia_9959_25_8978
 
+commit 7f30b8290eba16361768c82c0a92ab7a546d82c2
+Author: jcastillov17-byte <jcastillov17@miumg.edu.gt>
+Date:   Wed May 13 10:23:44 2026 -0600
+
+    modificando codigo
+
 commit dcfed8a71501f6570822afa24809944071684d04
 Author: Fernando Andrino <aandrinog@miumg.edu.gt>
 Date:   Wed May 13 10:04:41 2026 -0600
@@ -40,6 +548,19 @@ Author: William Canton <williamcanton2179@gmail.com>
 Date:   Wed May 13 09:55:52 2026 -0600
 
     Arreglo de pagos
+
+commit 20c7b5826e8530bfad563bd87f9c9301e8d4b42a
+Merge: 08717d4 c07cab5
+Author: 11antony <yllescasantony636@gmail.com>
+Date:   Wed May 13 09:49:14 2026 -0600
+
+    quita el merging
+
+commit 08717d4f89524d014e8045797c0616ffe7df3568
+Author: 11antony <yllescasantony636@gmail.com>
+Date:   Wed May 13 09:47:55 2026 -0600
+
+    guardando cambios antes del pull
 
 commit 68bb24f2f61e7f38c9b0d5efca7084437b880db5
 Merge: 790e293 7a108ad

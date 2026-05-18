@@ -1,5 +1,5 @@
 
-#include "Recepcion.h"
+#include "Recepcion.h"   //Daniel Amado y Katheryn Reyes
 #include <iostream>
 #include <fstream>
 #include <iomanip>

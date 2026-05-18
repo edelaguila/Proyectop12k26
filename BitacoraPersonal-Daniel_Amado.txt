@@ -1,0 +1,21 @@
+7bca27b Subiendo Ultima Actualzacion de Recepcion ya Completa con Montos de Archivos
+ccbdcd5 Merge branch 'main' into modificando_bancos_9959_25_18795
+73cc358 Agregando Bitacora de git
+10cbac4 Pull Request Fase III
+05e4c4c Actualizacion de Modulo
+e9cc91d Subiendo Clase Menu Tesoreria
+42521b7 Merge branch 'edelaguila:main' into main
+f3d5c68 Agregando menu y Generador de Constancias(GC hecho por Axel Fenando)
+3fe4985 Guardando localmente Cambios
+ded4d10 Merge branch 'edelaguila:main' into main
+754b41e Actualizando Clase Bancos sin Errores
+9b59ba3 Merge branch 'edelaguila:main' into main
+2c5a7e0 Implement account creation and saving functionality
+3e6ad19 Merge branch 'edelaguila:main' into main
+7cdef05 Delete Bancos directory
+5ccf03c Merge branch 'edelaguila:main' into main
+159e0f5 Merge branch 'edelaguila:main' into main
+58300dd Modulo Recepcion de Pagos + main provisional
+10e4fd1 Merge branch 'edelaguila:main' into creando_clase_bancos_9959_25_18795
+dea413c Subiendo Rama Bancos Correcta (coordinador)
+ddac936 Merge branch 'edelaguila:main' into main
