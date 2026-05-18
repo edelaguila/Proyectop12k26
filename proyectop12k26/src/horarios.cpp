@@ -41,7 +41,7 @@ vector<Horarios> Horarios::generar(vector<Cursos> cursos,bool pagoValidado,bool 
         dias = {"Lunes","Martes","Miercoles","Jueves","Viernes"};
     }
 
-    int indiceCurso = 0;
+    size_t indiceCurso = 0;
 
     for(size_t d = 0; d < dias.size(); d++)
     {
@@ -75,7 +75,7 @@ vector<Horarios> Horarios::generar(vector<Cursos> cursos,bool pagoValidado,bool 
             int inicio = hora;
             int fin = inicio + 2;
 
-}            string hInicio =
+            string hInicio =
                 (inicio < 10 ? "0" : "") +
                 to_string(inicio) +
                 ":00";
@@ -141,7 +141,7 @@ void Horarios::modificar(vector<Horarios>& lista)
 
     mostrar(lista);
 
-    int opcion;
+    size_t opcion;
 
     cout<<"Seleccione clase a modificar: ";
     cin>>opcion;
