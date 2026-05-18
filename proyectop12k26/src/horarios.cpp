@@ -1,5 +1,5 @@
 #include "Horarios.h"
-//antony marcelo yllescas fiqueroa 9959-25-6813
+//antony marcelo yllescas fiqueroa 9959-25-6813.
 
 Horarios::Horarios()
 {
@@ -75,7 +75,7 @@ vector<Horarios> Horarios::generar(vector<Cursos> cursos,bool pagoValidado,bool 
             int inicio = hora;
             int fin = inicio + 2;
 
-            string hInicio =
+}            string hInicio =
                 (inicio < 10 ? "0" : "") +
                 to_string(inicio) +
                 ":00";
