@@ -29,7 +29,7 @@ void Tesoreria::menu()
         cout << "==========================================" << endl;
         cout << "              MODULO TESORERIA            " << endl;
         cout << "==========================================" << endl;
-        cout << "1. Crear Cuenta Bancaria" << endl;
+        cout << "1. Gestiones Bancarias" << endl;
         cout << "2. Recepcion de Pagos" << endl;
         cout << "3. Generar Constancia" << endl;
         cout << "4. Regresar al Menu Principal" << endl;
@@ -43,34 +43,8 @@ void Tesoreria::menu()
         {
             case 1:
             {
-                string nombreCliente;
-                string nombreBanco;
-                double montoInicial;
-
                 system("cls");
-
-                cout << "===== CREACION DE CUENTA BANCARIA =====" << endl;
-
-                cout << "Ingrese nombre del cliente: ";
-                getline(cin, nombreCliente);
-
-                cout << "Ingrese banco (BAC / G&T / Banco Industrial): ";
-                getline(cin, nombreBanco);
-
-                cout << "Ingrese monto inicial: ";
-                cin >> montoInicial;
-                cin.ignore();
-
-                if(banco.crearCuenta(nombreCliente, montoInicial, nombreBanco))
-                {
-                    cout << "\nCuenta creada exitosamente." << endl;
-                }
-                else
-                {
-                    cout << "\nError al crear cuenta." << endl;
-                }
-
-                system("pause");
+                banco.desplegarMenu();
                 break;
             }
 

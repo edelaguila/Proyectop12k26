@@ -12,6 +12,8 @@ class Bancos
         Bancos();
         virtual ~Bancos();
 
+        void desplegarMenu();
+
         // Métodos de Información y Procesos
         bool InfoTransferencia(string nombreCliente, long long numeroTarjeta, int numeroCarnet);
         bool InfoPagoPlanilla(string nombreCliente, int idCuenta, int codigoCatedratico);
@@ -19,11 +21,13 @@ class Bancos
         bool procesoPagoPlanilla(int idCuenta, double monto);
         double montoCobro(string nombreAlumno);
         double montoPago(int codigo);
+        void desplegarCuentas();
 
         // Métodos de Gestión de Cuenta
         bool crearCuenta(string nombreCliente, double monto, string nombreBanco);
         bool guardarCuenta(int idCuenta, string nombreCliente, double saldo, long long numeroTarjeta, string nombreBanco);
         int generadorTarjetasCuentas();
+        bool borrarCuenta(int idCuentaBorrar);
 
     private:
         string nombreCliente;
